@@ -38,7 +38,7 @@ public struct MidiNote {
     
 }
 
-extension MidiNote {
+public extension MidiNote {
 
     func convert() -> MIDINoteMessage {
         return MIDINoteMessage(channel: channel, note: note, velocity: velocity, releaseVelocity: releaseVelocity, duration: Float32(duration.inSeconds))
